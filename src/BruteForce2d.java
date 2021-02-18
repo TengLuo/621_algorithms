@@ -1,12 +1,10 @@
-import java.util.Arrays;
-
 public class BruteForce2d {
     double min_distance = 999999999;
     int p1, p2;
 
     // Question 1 part a, b
     // using brute-force finding closet path
-    public double distance(double[] p1, double[] p2) {
+    private double distance(double[] p1, double[] p2) {
         double dist = Math.sqrt(Math.pow(p1[0] - p2[0], 2) + Math.pow(p1[1] - p2[1], 2));
         return dist;
     }
